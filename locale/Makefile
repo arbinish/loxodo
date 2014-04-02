@@ -1,3 +1,3 @@
 all:
-	xgettext -o loxodo.pot ../src/frontends/*/*.py
+	xgettext.pl -o loxodo.pot ../src/frontends/*/*.py
 

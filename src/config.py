@@ -53,7 +53,7 @@ class Config(object):
             self.recentvaults.append(self._parser.get("base", "recentvaults" + str(num)))
 
         if self._parser.has_option("base", "alphabet"):
-            self.alphabet = int(self._parser.get("base", "alphabet"))
+            self.alphabet = self._parser.get("base", "alphabet")
 
         if self._parser.has_option("base", "pwlength"):
             self.pwlength = int(self._parser.get("base", "pwlength"))
